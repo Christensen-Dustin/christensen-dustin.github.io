@@ -1,12 +1,42 @@
----
----
-<nav>
-</nav>
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JavaScript</title>
+    <script type="text/javascript" src="javaScriptLoop.js" ></script>
+</head>
+<body>
 
-<header>
-<h1>JavaScript</h1>
-  <hr>
-  <a href="{{ site.github.url }}/index.html">Main Assignment Page</a>
-  <hr>
+<h1>JavaScript Loops</h1>
+<hr>
+<a href="{{ site.github.url }}/index.html">Main Assignment Page</a>
+<hr>
 <br>Loops, Conditional Statements, Functions, Variables, Parameters Arrays, Associative Arrays<br>
-</header>
+<hr>
+<h2>For Loop</h2>
+    
+<button type="button" onclick="loopExample()">
+        Click for FOR Loop Example</button>
+
+<p id="loop1"></p>
+
+<h2>While Loop</h2>
+<h3>Please enter a number between 1 and 15</h3>
+    
+<input oninput="loopExample2(this.value);" size="1" />
+<br>
+<p2 id="loop2"></p2>
+
+<h2>DO/WHILE Loop</h2>
+<h3>From the first generated sentence please select a word.</h3>
+
+<input oninput="loopExample3(this.value);" size="7" />
+<br>
+The itme from the sentence to find "<p3 id="loop3a"></p3>"
+    <br>
+There are <p4 id="loop3b"></p4>
+    <br>
+<p5 id="loop3c"></p5>
+
+</body>
+</html>
