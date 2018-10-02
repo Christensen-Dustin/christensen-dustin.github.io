@@ -7,22 +7,24 @@
 </head>
 <body>
 
-<h1>JavaScript Loops</h1>
+<h1>JavaScript</h1>
     <hr>
-Loops, Conditional Statements, Functions, Variables, Parameters Arrays, Associative Arrays
+Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
     <hr>
 <h2>For Loop</h2>
     
 <button type="button" onclick="loopExample()">
         Click for FOR Loop Example</button>
-
+    <br>
+    <br>
 <p id="loop1"></p>
 
 <h2>While Loop</h2>
 <h3>Please enter a number between 1 and 15</h3>
     
 <input oninput="loopExample2(this.value);" size="1" />
-<br>
+    <br>
+    <br>
 <p2 id="loop2"></p2>
 
 <h2>DO/WHILE Loop</h2>
@@ -30,12 +32,122 @@ Loops, Conditional Statements, Functions, Variables, Parameters Arrays, Associat
     what is between the spaces, exactly.</h3>
 
 <input oninput="loopExample3(this.value);" size="7" />
-<br>
-The itme from the sentence to find "<p3 id="loop3a"></p3>"
+    <br>
+    <br>
+The item from the sentence to find "<p3 id="loop3a"></p3>"
     <br>
 There are <p4 id="loop3b"></p4>
     <br>
 <p5 id="loop3c"></p5>
 
+<h2>IF (ELSE and ELSE IF) Condition Statements</h2>
+<h3>If the Lord told you that you could have any blessing with no 
+    initial obedience requirement to receive it.
+        <br>
+    Would you accept?</h3>
+<input oninput="questionAnswer1(this.value);" size="7">
+    <br>
+    <br>
+<p6 id="condition1"></p6>
+    
+<h2>SWITCH Condition Statement</h2>
+<h3>If the Lord told you that you could have any blessing with no 
+    initial obedience requirement to receive it.
+        <br>
+    Would you accept?</h3>
+<select name="answer" onchange="questionAnswer2(this.value)">
+    <option value="">Select an answer</option>
+    <option value="yes">YES</option>
+    <option value="no">NO</option>
+    <option value="maybe">MAYBE</option>
+</select>
+    <br>
+    <br>
+<p7 id="condition2"></p7>
+    
+<h2>Parameter</h2>
+<h3>Enter a series of numbers, in the spaces provided. Numbers only please.</h3>
+
+<input type="text" id="input" size="3" />
+<input type="button" onclick="parameter()" value="increase" />
+    <br>
+    <br>
+Number of numbers entered = <p8 id="parameter1"></p8>
+    <br>
+Numbers Combined via multiplication = <p9 id="parameter2"></p9>
+    <br>
+<p91 id="parameter3"></p91>
+
+<h2>Array</h2>
+<h3>Enter in Words</h3>
+    
+<input type="text" id="input2" size="13" />
+<input type="button" onclick="simpleArray()" value="Add To Array" />
+    <br>
+    <br>
+Number of words entered <p10 id="simple1"></p10>
+    <br>
+<p11 id="simple2"></p11>
+
+<h2>Associative Array</h2>
+<h3>Please fill in the following provided spaces.</h3>
+
+First Name:
+    <input id="firstName" oninput="arrayAssoc();" size="7">
+Last Name:
+    <input id="lastName" oninput="arrayAssoc();" size="9">
+Adjective:
+    <input id="adj" oninput="arrayAssoc();" size="11">
+Noun: 
+    <input id="noun" oninput="arrayAssoc();" size="9">
+Verb:
+    <input id="verb" oninput="arrayAssoc();" size="9">
+    <br>
+    <br>
+Hello, my name is 
+    <p12 id="assoc1"></p12> <p13 id="assoc2"></p13>
+and people say that I am like a 
+    <p14 id="assoc3"></p14> <p15 id="assoc4"></p15>
+that can
+    <p16 id="assoc5"></p16>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
