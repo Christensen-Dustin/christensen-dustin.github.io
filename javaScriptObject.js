@@ -11,7 +11,10 @@ personalInfo.car = new Object();
     personalInfo.car.year = "1966";
     personalInfo.car.color = "Black Cherry";
 
-var sillySentence = new Object(); 
+var sillySentence = new Object();
+    sillySentence.noun = new Object();
+    sillySentence.verb = new Object();
+    sillySentence.adjective = new Object();
 
 // Personal information
 function objectFunction() {
@@ -108,26 +111,20 @@ function inheritance4() {
 }
 
 // Goal making ??     
-function properties() {
+function properties(noun1, noun2, verb1, verb2, adj1, adj2) {
     // Variables
     var display = " ";
-    var noun1 = document.getElementById("noun1").value;
-    var verb1 = document.getElementById("verb1").value;
-    var adj1 = document.getElementById("adj1").value; 
-    var noun2 = document.getElementById("noun2").value;
-    var verb2 = document.getElementById("verb2").value;
-    var adj2 = document.getElementById("adj2").value;
     
     // Load object
-    sillySentence.noun1 = noun1;
-    sillySentence.verb1 = verb1;
-    sillySentence.adj1 = adj1;
-    sillySentence.noun2 = noun2;
-    sillySentence.verb2 = verb2;
-    sillySentence.adj2 = adj2;
+    sillySentence.noun.noun1 = noun1;
+    sillySentence.verb.verb1 = verb1;
+    sillySentence.adjective.adj1 = adj1;
+    sillySentence.noun.noun2 = noun2;
+    sillySentence.verb.verb2 = verb2;
+    sillySentence.adjective.adj2 = adj2;
         
     // Load message
-    display = "The " + sillySentence.adj1 + " " + sillySentence.noun1 + " found several little " + sillySentence.noun2 + " " + sillySentence.verb1 + " around a very " + sillySentence.adj2 + " tree. I though to myself, I wonder if they can " + sillySentence.verb2 + "?";
+    display = "The " + sillySentence.adjective.adj1 + " " + sillySentence.noun.noun1 + " found several little " + sillySentence.noun.noun2 + " " + sillySentence.verb.verb1 + " around a very " + sillySentence.adjective.adj2 + " tree. I though to myself, I wonder if they can " + sillySentence.verb.verb2 + "?";
     
     // Display message
     document.getElementById("prop").innerHTML = display;
