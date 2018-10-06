@@ -56,17 +56,17 @@ Object Creation Functions, Inheritance, Properties, Methods, Instantiation
         <br>
 <h3>Silly Sentence, using JavaScript Objects</h3>
 
-    Provide a noun: <input id="noun1" size="13">
-    Provide a plural noun: <input id="noun2" size="13">
+    Provide a noun: <input type="text" id="noun1" size="13">
+    Provide a plural noun: <input type="text" id="noun2" size="13">
         <br>
-    Provide a verb: <input id="verb1" size="13">
-    Provide another verb: <input id="verb2" size="13">
+    Provide a verb: <input type="text" id="verb1" size="13">
+    Provide another verb: <input type="text" id="verb2" size="13">
         <br>
-    Provide a adjective: <input id="adj1" size="13">
-    Provide another adjective: <input id="adj2" size="13">
+    Provide a adjective: <input type="text" id="adj1" size="13">
+    Provide another adjective: <input type="text" id="adj2" size="13">
         <br>
         <br>
-    <input type="button" onclick="properties();" value="Display">
+    <input type="button" onclick="properties(document.getElementById('noun1').value, document.getElementById('noun2').value, document.getElementById('verb1').value, document.getElementById('verb2').value, document.getElementById('adj1').value, document.getElementById('adj2').value);" value="Display">
         <br>
         <br>
     <p3 id="prop"></p3>
