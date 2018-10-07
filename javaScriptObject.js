@@ -110,7 +110,7 @@ function inheritance4() {
     document.getElementById("car2").innerHTML = display3;
 }
 
-// Goal making ??     
+// Silly Sentence
 function properties(noun1, noun2, verb1, verb2, adj1, adj2) {
     // Variables
     var display = " ";
@@ -128,4 +128,39 @@ function properties(noun1, noun2, verb1, verb2, adj1, adj2) {
     
     // Display message
     document.getElementById("prop").innerHTML = display;
+}
+
+function SillySentence2(noun1, noun2, verb1, verb2, adje1, adje2) {
+        this.noun1 = noun1;
+        this.noun2 = noun2;
+        this.verb1 = verb1;
+        this.verb2 = verb2;
+        this.adje1 = adje1;
+        this.adje2 = adje2;
+    }
+    
+function properties2(noun1, noun2, verb1, verb2, adj1, adj2) {
+    // Variables
+    var display = " ";
+    
+    var silly1 = new SillySentence2(noun1, noun2, verb1, verb2, adj1, adj2);
+    
+    // Load message
+    display = "There is a " + silly1.adje1 + " " + silly1.noun1 + " that grew up in a town far away. In that town the " + silly1.noun1 + " found several little " + silly1.noun2 + " " + silly1.verb1 + " around a very " + silly1.adje2 + " tree. I though to myself, I wonder if those " + silly1.noun2 + " can " + silly1.verb2 + "?";
+    
+    // Display message
+    document.getElementById("prop2").innerHTML = display;
+}
+
+function properties3(noun1, noun2, verb1, verb2, adj1, adj2) {
+    // Variables
+    var display = " ";
+    
+    var silly2 = new SillySentence2(noun1, noun2, verb1, verb2, adj1, adj2);
+    
+    // Load message
+    display = "There is a " + silly2.adje1 + " " + silly2.noun1 + " that grew up in a town far away. In that town the " + silly2.noun1 + " found several little " + silly2.noun2 + " " + silly2.verb1 + " around a very " + silly2.adje2 + " tree. I though to myself, I wonder if those " + silly2.noun2 + " can " + silly2.verb2 + "?";
+    
+    // Display message
+    document.getElementById("prop3").innerHTML = display;
 }
