@@ -41,7 +41,7 @@ function cssSheet(option) {
 
 // Changing the Background Through Hovering
 function cssBGColor(option) {
-    document.body.style.background = option;
+    document.getElementById("background").style.background = option;
 }
 
 // Change Image By a Click
