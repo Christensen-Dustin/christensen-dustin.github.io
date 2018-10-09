@@ -1,12 +1,76 @@
----
----
-<nav>
-</nav>
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JavaScript</title>
+    <link id="selectCSS" rel="stylesheet" type="text/css" href="default.css">
+    <script type="text/javascript" src="cssClass.js" ></script>
+</head>
+<body>
 
-<header>
 <h1>CSS Class Properties</h1>
-  <hr>
+    <hr>
 Manipulating  CSS Class Properties Using JavaScript
-  <hr>
-
-</header>
+    <hr>
+<h2 id="color1">Changing the COLOR of text</h2>
+    <p>Select a color:</p>
+        <button onclick="textColor(0);">red</button>
+        <button onclick="textColor(1);">blue</button>
+        <button onclick="textColor(2);">green</button>
+        <button onclick="textColor(3);">default</button>
+    <br>
+    <br>
+<h2 id="size1">Changing the SIZE of text</h2>
+    <p>Select a size:</p>
+        <input type="radio" oninput="textSize(0);">7 px
+        <input type="radio" oninput="textSize(1);">17 px
+        <input type="radio" oninput="textSize(2);">50 px
+        <input type="radio" oninput="textSize(3);">Default
+    <br>
+    <br>
+<h2>Changing CSS style sheet</h2>
+    <p>Select a CSS style sheet:</p>
+        <select onchange="cssSheet(this.value);">
+            <option value="default.css">Default</option>
+            <option value="dark.css">CSS Dark</option>
+            <option value="light.css">CSS Light</option>
+            <option value="different.css">CSS Different</option>
+        </select>
+    <br>
+    <br>
+<h2 id="color1">Changing IMAGES</h2>
+    <img id="image1" src="4.16.2010_I_Love_Taiwan(2).JPG" width="270" height="400">
+    <br>
+        <button type="button" onclick="changeImage();">Change Image</button>        
+    <br>
+    <br>
+<h2>Changing CSS attributes by hovering</h2>
+    <p>Hover the mouse over a color:</p>
+        <table style="width:500px;height:100px">
+  <tr>
+    <td onmouseover="cssBGColor(this.style.backgroundColor)" 
+        onmouseout="cssBGColor('white')"
+        style="background-color:yellowgreen">
+    </td>
+    <td onmouseover="cssBGColor(this.style.backgroundColor)" 
+        onmouseout="cssBGColor('white')"
+        style="background-color:purple">
+    </td>
+    <td onmouseover="cssBGColor(this.style.backgroundColor)" 
+        onmouseout="cssBGColor('white')"
+        style="background-color:red">
+    </td>
+    <td onmouseover="cssBGColor(this.style.backgroundColor)" 
+        onmouseout="cssBGColor('white')"
+        style="background-color:cornflowerblue">
+    </td>
+  </tr>
+</table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
