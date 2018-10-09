@@ -1,0 +1,24 @@
+body {
+    background-color: orange;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+h2 {
+    color: green;
+    text-align: right;
+    font-family: monospace;
+    font-size: 60px;
+}
+
+p {
+    color: cornsilk;
+    text-align: right;
+    font-family: monospace;
+    font-size: 48px;
+}
