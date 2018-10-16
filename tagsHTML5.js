@@ -53,6 +53,8 @@ function printImage() {
     var line = document.getElementById("myImage");
     var draw = line.getContext("2d");
     
+    var message = "-Courtesy of Sony and Santa Monica Studios-";
+    
     var image = new Image();
     image.src = "God-of-War-Artwork-Banner.jpg";
     image.id = "GoWBanner";
@@ -61,4 +63,6 @@ function printImage() {
         var image2 = draw.drawImage(image, 75, 40);
         draw.fillStyle = image2;
     };
+    
+    document.getElementById("messThankYou").innerHTML = message;
 }
