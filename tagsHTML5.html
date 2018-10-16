@@ -1,11 +1,56 @@
----
----
-<nav>
-</nav>
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>HMTL5 Tages for Video, Audio, and Canvas</title>
+    <script type="text/javascript" src="tagsHTML5.js"></script>
+</head>
+<body>
 
-<header>
 <h1>HTML5 Tags</h1>
-  <hr>
+    <hr>
 Video, Audio, and Canvas
-  <hr>
-</header>
+    <hr>
+<h2>Opening Audio Message Example</h2>
+    <audio id="audioMessage" controls loop>
+        <source src="Opening_Message.mp3" type="audio/mpeg">
+        Your Browser does not support the audio file type
+    </audio>
+
+<h2>Enjoyable Video Clip Example</h2>
+-Courtesy of Sony and Santa Monica Studios-
+    <br>
+    <br>
+<video id="GOW" width="800" height="400" controls loop>
+    <source src="God_of_War_Commercial.MP4" type="video/mp4">
+</video>
+
+<h2>Enjoy this Video Example Pulled from YouTube</h2>
+-Courtesy of Sony and Santa Monica Studios-
+    <br>
+    <br>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/HREe-_kjAls" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    
+</iframe>
+    
+<h2>Enjoy the Canvas Drawing Example</h2>
+-I am not an Artist, so forgive the image-
+    <br>
+    <br>
+<canvas id="myImage" width="800" height="400" style="border:3px solid red;">
+    
+</canvas>
+    <br>
+    <br>
+<button onclick="line()" type="button">Draw a Line</button>
+<button onclick="circle()" type="button">Draw a Circle</button>
+<button onclick="square()" type="button">Draw a Square</button>
+<button onclick="retangle()" type="button">Draw a Retangle</button>
+<button onclick="triangle()" type="button">Draw a Triangle</button>
+<button onclick="printImage()" type="button">Add an Image</button>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
