@@ -1,13 +1,14 @@
 {
     "personel":[
-        {"name": {"first":"Dustin",
-                  "last":"Christensen"},
+        {"first":"Dustin",
+         "last":"Christensen",
          "age":41,
          "position":"Designer",
          "degree":"Software Engineering",
          "years":5
         },
-        {"name": {"first":"Shaun","last":"Luna"},
+        {"first":"Shaun",
+         "last":"Luna",
          "age":43,
          "position":"Team Lead",
          "degree":"Computer Science",
