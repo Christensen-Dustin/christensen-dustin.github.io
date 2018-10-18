@@ -2,9 +2,19 @@
     // Unverisal Varibles
     var storage;
     var storageTransfer;
+    var storage2;
     var display = " ";
-    var displayTransfer = " ";
     var count = 0;
+
+// adding personel
+function AddPersonel(fName, lName, age, position, degree, years) {
+    this.first = fName;
+    this.last = lName;
+    this.age = age;
+    this.position = position;
+    this.degree = degree;
+    this.years = years;
+}
 
 // Loads data from file
 function loadData() {
@@ -31,7 +41,7 @@ function loadData() {
 function organized() {
     // call function
     displayData();
-    
+            
     // Display Content
     document.getElementById("parsing2").innerHTML = display;
 }
@@ -40,14 +50,15 @@ function organized() {
 function displayData() {
     // reset count
     count = 0;
+    display = " ";
     
     // Load Header
     display += "<table><tr><th>First Name</th>" + "<th>Last Name</th>" + 
         "<th>Age</th>" + "<th>Position</th>" + "<th>Degree</th>" + "<th>Years</th></tr>";
     // Loop Throw the data
     for (var i = 0; i < storage.personel.length; i++) {
-        display += "<tr><td>" + storage.personel[i].name.first + "</td>" + 
-            "<td>" + storage.personel[i].name.last + "</td>" +
+        display += "<tr><td>" + storage.personel[i].first + "</td>" + 
+            "<td>" + storage.personel[i].last + "</td>" +
             "<td>" + storage.personel[i].age + "</td>" + 
             "<td>" + storage.personel[i].position + "</td>" + 
             "<td>" + storage.personel[i].degree + "</td>" + 
@@ -73,17 +84,21 @@ function inputData() {
     var degree = document.getElementById("degree").value;
     var years = document.getElementById("years").value;
     
-    // load new variables
-    storage.personel[x].name.first = fName;
-    storage.personel[x].name.last = lName;
-    storage.personel[x].age = age;
-    storage.personel[x].position = position;
-    storage.personel[x].degree = degree;
-    storage.personel[x].years = years;
+    // Create new object for personel
+    var newPersonel = new AddPersonel(fName, lName, age, position, degree, years);
+    
+    storage.personel[storage.personel.length] = newPersonel;
     
     // call function
     displayData();
     
+    storageTransfer = JSON.stringify(storage);
+    localStorage.setItem("storage2", storageTransfer);
+    
     document.getElementById("parsing3").innerHTML = display;
 }
 
+// Display stringified variable
+function stringifiedVariable() {
+    document.getElementById("parsing4").innerHTML = storageTransfer;
+}
