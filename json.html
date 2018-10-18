@@ -1,12 +1,41 @@
----
----
-<nav>
-</nav>
-
-<header>
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JSON - Parse and Stringify</title>
+    <script type="text/javascript" src="json.js"></script>
+</head>
+<body>
 <h1>JSON</h1>
-  <hr>
+    <hr>
 Parse, Stringify
-  <hr>
+    <hr>
+<h2>JSON Parsing</h2>
+<h3>Pulling data from a TXT file (jsonStorage.txt) and displaying the contents</h3>
+<p id="parsing1"></p>
+<button id="textFile" onclick="loadData()">click to show content of TXT File</button>
+    <br>
+    <br>
+<p id="parsing2"></p>
+<button id="textFile" onclick="organized()">click to show content Organized</button>
+    <br>
+    <br>
+<h2>JSON Stringify</h2>
+<h3>Enter Data</h3>
+First Name: <input id="fName" type="text" size="13">
+Last Name: <input id="lName" type="text" size="16">
+Age: <input id="age" type="text" size="3">
+        <br>
+        <br>
+Position: <input id="pos" type="text" size="15">
+Degree: <input id="degree" type="text" size="19">
+Years: <input id="years" type="text" size="3">
+        <br>
+        <br>
+<input type="button" onclick="inputData()" value="Enter and display Data">
+<p id="parsing3"></p>    
 
-</header>
+    
+    
+</body>
+</html>
