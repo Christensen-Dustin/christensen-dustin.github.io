@@ -1,0 +1,93 @@
+h2 {
+    color: orange;
+}
+
+.a {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: translate(-10px, -23px);
+}
+
+.b {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: rotate(-35deg);
+}
+
+.c {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: scale(0.2, 0.3);
+}
+
+.d {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: skewX(-30deg);
+}
+
+.e {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: skewY(-70deg);
+}
+
+.f {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: skew(-50deg, -30deg);
+}
+
+.g {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: matrix(2, 0.3, 0, 1, 0, 0)
+}
+
+.h {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: rotateX(-77deg);
+}
+
+.i {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: rotateY(-100deg);
+}
+
+.j {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: rotateZ(-45deg);
+}

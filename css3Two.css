@@ -1,0 +1,93 @@
+h2 {
+    color: red;
+}
+
+.a {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: translate(13px, 23px);
+}
+
+.b {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: rotate(45deg);
+}
+
+.c {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: scale(2,3);
+}
+
+.d {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: skewX(60deg);
+}
+
+.e {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: skewY(50deg);
+}
+
+.f {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: skew(50deg, 50deg);
+}
+
+.g {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: matrix(2, -0.7, 2, 3, .75, .8)
+}
+
+.h {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: rotateX(60deg);
+}
+
+.i {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: rotateY(75deg);
+}
+
+.j {
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    background-color: lightblue;
+    border: 3px solid black;
+    transform: rotateZ(37deg);
+}
