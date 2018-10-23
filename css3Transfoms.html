@@ -1,12 +1,46 @@
----
----
-<nav>
-</nav>
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CSS3 Transforms without Custom Libraries</title>
+    <link id="stylePage" rel="stylesheet" type="text/css" href="css3One.css"/>
+    <script type="text/javascript" src="css3Transform.js"></script>
+</head>
+<body>
 
-<header>
 <h1>CSS3 Transforms</h1>
-  <hr>
-Desiging, Defining, and Triggering CSS3 Transforms without Custom Libraries
-  <hr>
-
-</header>
+    <hr>
+Designing, Defining, and Triggering without Custom Libraries
+    <hr>
+<form>
+    <select onchange="transform(this.value);">
+        <option value="css3One.css">Default</option>
+        <option value="css3Two.css">Change one direction</option>
+        <option value="css3Three.css">Change the other direction</option>
+    </select>
+</form>
+<h2>translate()</h2>
+    <div class="a">Translating an element</div>
+<h2>rotate()</h2>
+    <div class="b">Rotating an element</div>
+<h2>scale()</h2>
+    <div class="c">Scaling an element</div>    
+<h2>skewX()</h2>
+    <div class="d">Skewing an element via the X-axis</div>
+<h2>skewY()</h2>
+    <div class="e">Skewing an element via the Y-axis</div>
+<h2>skew()</h2>
+    <div class="f">Skewing an element via the X and Y-axis</div>
+<h2>matrix()</h2>
+    <div class="g">Manipulating an element via 6 attributes</div>
+<h2>rotateX()</h2>
+    <div class="h">Rotating an element along its X-axis</div>
+<h2>rotateY()</h2>
+    <div class="i">Rotating an element along its Y-axis</div>
+<h2>rotateZ()</h2>
+    <div class="j">Rotating an element along its Z-axis</div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
