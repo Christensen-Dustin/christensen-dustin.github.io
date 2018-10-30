@@ -1,0 +1,257 @@
+/* Squares and rectangle*/
+.a {
+    text-align: center;
+    margin: 13px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    float: left;
+    transition: width 3s, height 5s;
+}
+.a:hover {
+    width: 250px;
+    height: 175px;
+}
+
+
+.a1 {
+    text-align: center;
+    margin: 13px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    float: left;
+    transition: width 5s, height 5s;
+}
+.a1:hover {
+    width: 200px;
+    height: 200px;
+}
+.a2 {
+    text-align: center;
+    margin: 13px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    float: left;
+    border-radius: 50%;
+    transition: width 4s, height 3s;
+}
+.a2:hover{
+    width: 50px;
+    height: 50px;
+}
+
+/* Circles, ovals, Squares, and Rectangles*/
+.b {
+    text-align: center;
+    margin: 13px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    float: left;
+    border-radius: 50%;
+    transition: width 4s, height 3s;
+}
+.b:hover{
+    width: 350px;
+    height: 200px;
+}
+.b1 {
+    text-align: center;
+    margin: 13px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    float: left;
+    border-radius: 50%;
+    transition: all 3s;
+}
+.b1:hover{
+    width: 350px;
+    height: 200px;
+    border-radius: 0%;
+}
+.b2 {
+    color: white;
+    text-align: center;
+    margin: 13px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+    border-radius: 0%;
+    transition: all 4s;
+}
+.b2:hover{
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Card flip with click lister*/
+.c {
+    background-color: red;
+    float: left;
+    margin-left: 27px;
+    padding: 13px;
+    width: 200px;
+    height: 125px    
+}
+.flip {
+    position: relative;
+    animation-name: flipX, colors, shift;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    box-shadow: 1px 0px 63px 8px red;
+}
+@keyframes colors {
+    0%{background-color: green;}
+    20%{background-color: yellow;}
+    40%{background-color: brown;}
+    60%{background-color: skyblue;}
+    80%{background-color: orangered;}
+}
+@keyframes shift {
+    from{border-radius: 0%;}
+    to{border-radius: 50%;}
+}
+@keyframes flipX {
+    0%{transform: rotateX(0deg);}
+    10{transform: rotateY(36deg);}
+    20%{transform: rotateX(72deg);}
+    30%{transform: rotateY(108deg);}
+    40%{transform: rotateX(144deg);}
+    50%{transform: rotateY(180deg);}
+    60%{transform: rotateX(216deg);}
+    70%{transform: rotateY(252deg);}
+    80%{transform: rotateX(288deg);}
+    90%{transform: rotateY(324deg);}
+    100%{transform: rotateX(360deg);}
+}
+@keyframes flipY {
+    0%{transform: rotateY(0deg);}
+    20%{transform: rotateY(72deg);}
+    40%{transform: rotateY(144deg);}
+    60%{transform: rotateY(216deg);}
+    80%{transform: rotateY(288deg);}
+}
+@keyframes flipZ {
+    0%{transform: rotateZ(0deg);}
+    20%{transform: rotateZ(72deg);}
+    40%{transform: rotateZ(144deg);}
+    60%{transform: rotateZ(216deg);}
+    80%{transform: rotateZ(288deg);}
+}
+
+
+/*Animation-Timing-Function*/
+.d1 {
+    width: 100px; 
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    border-style: solid;
+    border-width:  3px;
+    border-color:  black;
+    position: relative;
+    animation-name: travel;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.d2 {
+    width: 100px; 
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: brown;
+    border-style: solid;
+    border-width:  3px;
+    border-color:  black;
+    position: relative;
+    animation-name: travel;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.d3 {
+    width: 100px; 
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: orange;
+    border-style: solid;
+    border-width:  3px;
+    border-color:  black;
+    position: relative;
+    animation-name: travel;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+.d4 {
+    width: 100px; 
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: tan;
+    border-style: solid;
+    border-width:  3px;
+    border-color:  black;
+    position: relative;
+    animation-name: travel;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+.d5 {
+    width: 100px; 
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    border-style: solid;
+    border-width:  3px;
+    border-color:  black;
+    position: relative;
+    animation-name: travel, morph;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transform: all 7s;
+}
+@keyframes travel {
+    from{left: 0px;}
+    to{left: 1000px;}
+}
+@keyframes travel1 {
+    from{left: 0px;}
+    to{left: 1000px; background: yellow; border-radius: 50%; transform: rotate(1440deg);}
+}
+@keyframes travel2 {
+    from{left: 0px;}
+    to{left: 1000px; background: beige; transform: rotateX(720deg);}
+}
+@keyframes travel3 {
+    from{left: 0px;}
+    to{left: 1000px; background: purple; transform: rotateY(1440deg);}
+}
+@keyframes travel4 {
+    from{left: 0px;}
+    to{left: 1000px; background: blue; border-radius: 75%; transform: translate(0px, 150px);}
+}
+@keyframes travel5 {
+    from{left: 0px;}
+    to{left: 1000px; background: yellow; transform: skew(90deg, 90deg);}
+}
