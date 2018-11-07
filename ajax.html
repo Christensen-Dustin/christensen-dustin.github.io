@@ -1,13 +1,85 @@
----
----
-<nav>
-</nav>
-
-<header>
-<h1>AJAX</h1>
-  <hr>
-Requesting a JSON file
-  <hr>
-
-
-</header>
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>AJAX/Local Storage API</title>
+    <script type="text/javascript" src="ajax.js"></script>
+    <style>
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>AJAX request of a JSON file - LocalStorage API storing and retreiving</h1>
+    <hr>
+Taking a JSON file, throwing it in to LOCALSTORAGE API, Update the LOCALSTORAGE API
+    <hr>
+<center>
+    <h2>JavaScript GET Request Test upon submitting user input from website</h2>
+        <br>
+    <form action="">
+        <select name="ipAddress" onchange="changeIP(this.value)">
+            <option value="" >Select an IP address</option>
+            <option value="176.202.14.168" >176.202.14.168</option>
+            <option value="89.211.233.188" >89.211.233.188</option>
+            <option value="40.77.167.44" >40.77.167.44</option>
+            <option value="66.249.65.81" >66.249.65.81</option>
+            <option value="5.9.111.70" >5.9.111.70</option>
+            <option value="116.109.24.106" >116.109.24.106</option>
+            <option value="45.50.81.235" >45.50.81.235</option>
+        </select>
+    </form>
+        <br>
+    <table id="displayInfo" border="1">
+        <tr>    <th>Status Code:</th>   <td id="statusCode"></td>      </tr>
+        <tr>    <th>IP Address:</th>    <td id="ipAddress"></td>       </tr>
+        <tr>    <th>Country Name:</th>  <td id="countryName"></td>     </tr>
+        <tr>    <th>Region Name:</th>   <td id="regionName"></td>      </tr>
+        <tr>    <th>City Name:</th>     <td id="cityName"></td>        </tr>
+        <tr>    <th>Zip Code:</th>      <td id="zipCode"></td>         </tr>
+        <tr>    <th>Latitude:</th>      <td id="latitude"></td>        </tr>
+        <tr>    <th>Longitude:</th>     <td id="longitude"></td>       </tr>
+        <tr>    <th>Time Zone:</th>     <td id="timeZone"></td>        </tr>
+    </table>
+        <br>
+<h2>AJAX REQUEST of a JSON file</h2>
+<h3>Pulling data from a JSON file (jsonStorage.json) and displaying the contents as a string</h3>
+    <br>
+<p id="parsing1"></p>
+<button id="textFile" onclick="loadData()">click to show content of JSON File</button>
+    <a>This is the intial load of the file, clicking this would reset the LocalStorage</a>
+    <br>
+    <br>
+<h2>Parse the LocalStorage API and displaying the data</h2>
+    <br>
+<p id="parsing2"></p>
+<button id="textFile" onclick="organized()">click to show content Organized</button>
+    <a>Click this button to update the data in the LocalStorage API</a>
+    <br>
+    <br>
+<h2>Update Object created by LocalStorage API</h2>
+<h3>Enter Data to update the Object</h3>
+        <br>
+First Name: <input id="fName" type="text" size="13">
+Last Name: <input id="lName" type="text" size="16">
+Age: <input id="age" type="text" size="3">
+        <br>
+Position: <input id="pos" type="text" size="15">
+Degree: <input id="degree" type="text" size="19">
+Years: <input id="years" type="text" size="3">
+        <br>
+        <br>
+<input type="button" onclick="inputData()" value="Enter and display Data">
+    <a>This loads the new objects onto the existing array of objects</a>
+<p id="parsing3"></p>
+        <br>
+<h2>Objects have been re-stringified to be re-introduced into LocalStorage</h2>
+        <br>
+<input type="button" onclick="stringifiedVariable()" value="Display Stringified Data">
+    <a>This button stringifies the objects and reloads them in to LocalStorage</a>
+<p id="parsing4"></p>
+</center>    
+    <br><br><br><br><br><br><br>
+</body>
+</html>
