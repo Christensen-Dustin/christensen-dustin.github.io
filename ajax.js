@@ -106,7 +106,9 @@ function stringifiedVariable() {
 }
 
 // POST data
-function saveData() {
+function saveData(e) {
+    e.preventDefault();
+    
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "jsonStorage.json", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
@@ -148,7 +150,7 @@ function changeIP(newIP) {
     // Checks the state of the process
     xhr.onreadystatechange = processRequest;
             
-    function processRequest() {
+    function processRequest(e) {
         // Checks the status
         if (xhr.readyState == 4 && xhr.status == 200) {
             // Setup variables to display
@@ -165,4 +167,3 @@ function changeIP(newIP) {
         }
     }
 }
-
