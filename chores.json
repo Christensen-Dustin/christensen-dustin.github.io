@@ -1,0 +1,32 @@
+{
+    "chores":[
+        {
+            "name":"Dustin",
+            "chore1":"Wash Clothes",
+            "chore2":"Fold Clothes",
+            "chore3":"Vaccum Floors",
+            "chore4":"Take Out Trash"
+        },
+        {
+            "name":"Jean",
+            "chore1":"Clean Desk",
+            "chore2":"Organize Pantry",
+            "chore3":"Organize Closet",
+            "chore4":"Take Out Trash"
+        },
+        {
+            "name":"Faith",
+            "chore1":"Clean Bedroom",
+            "chore2":"Wash Dishes",
+            "chore3":"Clean Dog Play Pin",
+            "chore4":"Clean Bathroom Counter"
+        },
+        {
+            "name":"Garrison",
+            "chore1":"Clean Bedroom",
+            "chore2":"Sweep Patio",
+            "chore3":"Put Clean Dishes Away",
+            "chore4":"Clean Bathroom Floor"
+        }
+    ]
+}
