@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Mobile Application Project</title>
+    <link id="stylePage" rel="stylesheet" type="text/css" href="chores.css"/>
+    <script type="text/javascript" src="chores.js"></script>
+</head>
+<body onload="loadChores()">
+<h1>Mobile Application Project</h1>
+  <hr>
+<ul>
+    <li>Designing, Defining, and Triggering CSS3 Transitions</li>
+    <li>Designing, Defining, and Triggering CSS3 Transformations</li>
+    <li>Designing, Defining, and Triggering CSS3 Animations</li>
+    <li>JavaScript, AJAX, and LocalStorage</li>
+</ul>
+  <hr>
+<div id="select">
+<h2>Chore List Example</h2>
+    <h3>Select a Member of the Family</h3>
+        <button id="dustin" value="Dustin"
+                onclick="displayChores(this.value)">Dustin</button>
+        <button id="jean" value="Jean" 
+                onclick="displayChores(this.value)">Jean</button>
+        <button id="faith" value="Faith"
+                onclick="displayChores(this.value)">Faith</button>
+        <button id="garrison" value="Garrison"
+                onclick="displayChores(this.value)">Garrison</button>
+</div>
+<div id="list">
+<h3>List of Chores to be accomplished</h3>
+    <h4>Chores to do:</h4>
+        <h3 id="name" onmouseover="sizeUp()" onmouseout="sizeDown()"></h3>
+        <form id="remaining">
+            <ul id="toDoList"></ul>
+        </form>
+        <div id="dueDate">Chores have to be done by Saturday afternoon.</div>
+</div>
+<div id="done">
+    <h4>Chores finised today:</h4>
+        <ul id="finishedList"></ul>
+        <p id="choreTip" onmouseover="mouseOver()" onmouseout="mouseOut()">Remember to get your chores done quickly, so that you can have fun.
+            <span id="choreTipText">This week we are going to movies, if the chores are done quickly.</span>
+        </p>
+</div>
+<div id="buttons">
+    <h4>Move an item from the "To Do List" to the "Finished List"</h4>
+        <button onclick="topChore()">Top ITEM</button>
+        <button onclick="bottomChore()">Bottom ITEM</button>
+    <h4>Add an item from the "Finished List" to the "To Do List"</h4>
+        <button onclick="topFinished()">Top ITEM</button>
+        <button onclick="bottomFinished()">Bottom ITEM</button>
+</div>
+</body>
+</html>

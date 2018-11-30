@@ -1,0 +1,165 @@
+body {
+    background-color: #D4F1F7;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: gainsboro;
+    background-color: #BFB431;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px grey;
+}
+
+button:hover {
+    background-color: green;
+}
+
+button:active {
+    background-color: green;
+    box-shadow: 0 5px greenyellow;
+    transform: translate(4px);
+}
+
+#dustin {
+    color: greenyellow;
+}
+
+#dustin:hover {
+    background-color: green;
+}
+
+#dustin:active {
+    background-color: green;
+    box-shadow: 0 5px greenyellow;
+    transform: translate(4px);
+}
+
+#jean {
+    color: red;
+}
+
+#jean:hover {
+    background-color: crimson;
+}
+
+#jean:active {
+    background-color: green;
+    box-shadow: 0 5px greenyellow;
+    transform: translate(4px);
+}
+
+#faith {
+    color: pink;
+}
+
+#faith:hover {
+    background-color: #BA8686;
+}
+
+#faith:active {
+    background-color: green;
+    box-shadow: 0 5px greenyellow;
+    transform: translate(4px);
+}
+
+#garrison {
+    color: lightsteelblue;
+}
+
+#garrison:hover {
+    background-color: darkblue;
+}
+
+#garrison:active {
+    background-color: green;
+    box-shadow: 0 5px greenyellow;
+    transform: translate(4px);
+}
+
+#choreTip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 7px dotted red;
+}
+
+#choreTipText {
+    visibility: hidden;
+    width: 500px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 13px;
+    padding: 13px 0;
+    position: absolute;
+    z-index: 3;
+    top: -5px;
+    left: 110%;
+}
+
+#dueDate {
+    color: red;
+    font-size: 200%;
+    background-color: aqua;
+    visibility: hidden;
+    position: relative;
+}
+
+#toDoList {
+    color: brown;
+    border: 7px solid black;
+    border-radius: 20%;
+    background-color: beige;
+}
+
+#finishedList {
+    color: yellow;
+    border: 7px solid black;
+    border-radius: 20%;
+    background-color: black;    
+}
+
+#select {
+    margin: auto;
+    width: 30%;
+    border: 3px solid black;
+    border-radius: 15%;
+    padding: 1%;
+    text-align: center;
+    background-color: lightyellow;
+}
+
+#list {
+    margin: auto;
+    width: 25%;
+    border: 7px solid red;
+    border-radius: 15%;
+    padding: 7%;
+    text-align: center;
+    background-color: lightgray;
+}
+
+#done {
+    margin: auto;
+    width: 25%;
+    border: 7px solid purple;
+    border-radius: 15%;
+    padding: 7%;
+    text-align: center;
+    background-color: lightpink;
+}
+
+#buttons {
+    margin: auto;
+    width: 30%;
+    border-radius: 15%;
+    border: 3px solid purple;
+    padding: 5%;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
