@@ -16,11 +16,11 @@ button {
 }
 
 button:hover {
-    background-color: green;
+    background-color: black;
 }
 
 button:active {
-    background-color: green;
+    background-color: brown;
     box-shadow: 0 5px greenyellow;
     transform: translate(4px);
 }
@@ -131,6 +131,72 @@ button:active {
     padding: 1%;
     text-align: center;
     background-color: lightyellow;
+}
+
+.flip {
+    position: relative;
+    animation-name: flip;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes flip {
+    0%{transform: rotateX(0deg);}
+    100%{transform: rotateX(360deg);}
+}
+
+.flop {
+    position: relative;
+    animation-name: flop;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes flop {
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
+
+.spin {
+    position: relative;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.squish {
+    position: relative;
+    animation-name: squish;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes squish {
+    0%{transform: scale(1.2, 1.2);}
+    10%{transform: scale(0.8, 0.8);}
+    20%{transform: scale(0.6, 0.6);}
+    30%{transform: scale(0.4, 0.4);}
+    40%{transform: scale(0.2, 0.2);}
+    100%{transform: scale(1.0, 1.0);}
+}
+
+.shake {
+    position: relative;
+    animation-name: shake;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes shake {
+    0%{transform: translate(7px, -3px);}
+    10%{transform: translate(-14px, 3px);}
+    20%{transform: translate(14px, -3px);}
+    30%{transform: translate(-14px, 3px);}
 }
 
 #list {
