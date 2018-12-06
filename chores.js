@@ -13,13 +13,13 @@ function loadChores() {
     xmlhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             localStorage.setItem("chores", this.responseText);
-            alert("All is loaded");
+            localStorage.setItem("finished", this.responseText);
+            flipIT();
         }
     };
 
     // Display information
     xmlhttp.send();
-    // alert("Chores are Loaded");
 }
 
 // Display Chores
@@ -48,15 +48,19 @@ function displayChores(name){
     // Handle when name is selected 
     if (name == "Dustin") {
         index = 0;
+        adjustDustin();
     }
     if (name == "Jean") {
         index = 1;
+        adjustJean();
     }
     if (name == "Faith") {
         index = 2;
+        adjustFaith();
     }
     if (name == "Garrison") {
         index = 3;
+        adjustGarrison();
     }
     
     displayName += "<h4>" + choreList.chores[index].name + "</h4>";
@@ -68,6 +72,8 @@ function displayChores(name){
     document.getElementById("name").innerHTML = displayName;
     document.getElementById("toDoList").innerHTML = displayList;
 }
+
+document.getElementById("dustin").addEventListener("click", flipDustin);
 
 // Top Chore
 function topChore() {
@@ -115,4 +121,25 @@ function sizeDown() {
     document.getElementById("dueDate").style.visibility = "hidden";
     document.getElementById("toDoList").style.color =  "brown";
     document.getElementById("toDoList").style.fontSize = "100%";
+}
+
+// flip the options
+function flipIT(){
+    document.getElementById("select").className = "flip";
+}
+
+// flip Chore List
+function adjustDustin(){
+    document.getElementById("list").className = "flop";    
+}
+function adjustJean(){
+    document.getElementById("list").className = "spin";
+}
+
+function adjustFaith(){
+    document.getElementById("list").className = "squish";
+}
+
+function adjustGarrison(){
+    document.getElementById("list").className = "shake";
 }
