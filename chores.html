@@ -16,7 +16,7 @@
     <li>JavaScript, AJAX, and LocalStorage</li>
 </ul>
   <hr>
-<div id="select">
+<div id="select" class="select">
 <h2>Chore List Example</h2>
     <h3>Select a Member of the Family</h3>
         <button id="dustin" value="Dustin"
@@ -28,7 +28,7 @@
         <button id="garrison" value="Garrison"
                 onclick="displayChores(this.value)">Garrison</button>
 </div>
-<div id="list">
+<div id="list" class="list">
 <h3>List of Chores to be accomplished</h3>
     <h4>Chores to do:</h4>
         <h3 id="name" onmouseover="sizeUp()" onmouseout="sizeDown()"></h3>
@@ -43,7 +43,7 @@
         <p id="choreTip" onmouseover="mouseOver()" onmouseout="mouseOut()">Remember to get your chores done quickly, so that you can have fun.
             <span id="choreTipText">This week we are going to movies, if the chores are done quickly.</span>
         </p>
-</div>
+</div>    
 <div id="buttons">
     <h4>Move an item from the "To Do List" to the "Finished List"</h4>
         <button onclick="topChore()">Top ITEM</button>
